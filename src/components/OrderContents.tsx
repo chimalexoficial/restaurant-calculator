@@ -13,7 +13,7 @@ export default function OrderContents({ order, removeItem }: OrderContentProps) 
             <h2 className="font-black text-4xl">Your order</h2>
 
             <div className="space-y-3 mt-5">
-                {order.length === 0 ? <p className="text-center">The order is empty, please add some items.</p> : (
+                {(
                     order.map(item => (
                         <div
                             className="flex justify-between items-center border-t border-gray-200 py-5 last-of-type:border-b"
